@@ -9,6 +9,64 @@
 	</script>
 </head>
 <body>
+	<div class = "container">
+		<div class = "row">
+			<div class = "col-lg-4 col-lg-offset-4">
+				<div class = "container calculator">
+					<div class = "row">
+						<div class = "col-xs-10 "> 
+							<form name = "inputbox" class = "inputbox">
+  								<input type="text" name = "display"><br>
+							</form>
+						</div>
+					</div>
+					<div class = "row">
+						<div class = "col-xs-12 ">
+							<button type = "button" class = "button" onclick =	"inputbox.display.value = ''"> C </button>
+							<button type = "button" class = "button" onclick =	"inputbox.display.value = ''"> +/- </button>
+							<button type = "button" class = "button" onclick  =	"inputbox.display.value += ''"> % </button>
+							<button type = "button" class = "button orange" onclick ="inputbox.display.value += '/'"> / </button>
+							
+						</div>
+					</div>
+					<div class = "row">
+						<div class = "col-xs-12">
+							<button type = "button" class = "button" onclick ="inputbox.display.value += '7'"> 7 </button>
+							<button type = "button" class = "button" onclick ="inputbox.display.value += '8'"> 8 </button>
+							<button type = "button" class = "button" onclick ="inputbox.display.value += '9'"> 9 </button>
+							<button type = "button" class = "button orange" onclick ="inputbox.display.value += '*'"> x </button>
+						</div>
+					</div>
+					<div class = "row">
+						<div class = "col-xs-12">
+							<button type = "button" class = "button" onclick ="inputbox.display.value += '4'"> 4 </button>
+							<button type = "button" class = "button" onclick ="inputbox.display.value += '5'"> 5 </button>
+							<button type = "button" class = "button" onclick ="inputbox.display.value += '6'"> 6 </button>
+							<button type = "button" class = "button orange" onclick ="inputbox.display.value += '-'"> - </button>
+						</div>
+						
+					</div>
+					<div class = "row">
+						<div class = "col-xs-12">
+							<button type = "button" class = "button" onclick ="inputbox.display.value += '1'"> 1 </button>
+							<button type = "button" class = "button" onclick ="inputbox.display.value += '2'"> 2 </button>
+							<button type = "button" class = "button" onclick ="inputbox.display.value += '3'"> 3 </button>
+							<button type = "button" class = "button orange" onclick ="inputbox.display.value += '+'"> + </button>
+						</div>
+					</div>
+					<div class = "row">
+						<div class = "col-xs-12">
+							<button type = "button" class = "button"> DEL</button>
+							<button type = "button" class = "button" onclick ="inputbox.display.value += '0'"> 0 </button>
+							
+							<button type = "button" class = "button" onclick ="inputbox.display.value += '.'"> . </button>
+							<button type = "button" class = "button orange" onclick =" inputbox.display.value = eval(inputbox.display.value)"> = </button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </body>
 </html>
